@@ -42,14 +42,31 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM5-S4-qBt">
-                                                <rect key="frame" x="0.0" y="0.0" width="484" height="250"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="250"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
+                                                    <action selector="Button1:" destination="Fir-5o-G0S" eventType="touchUpInside" id="nSv-tB-I2y"/>
                                                     <segue destination="BYZ-38-t0r" kind="show" id="Q74-dE-pnc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djv-7s-I17">
+                                                <rect key="frame" x="242" y="0.0" width="242" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="Button2:" destination="Fir-5o-G0S" eventType="touchUpInside" id="JBJ-e6-ZV7"/>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="lY6-z6-oJB"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tmp-album-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-fu-mRK">
+                                        <rect key="frame" x="25" y="2775" width="102" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tmp-album-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tib-6K-IUn">
+                                        <rect key="frame" x="161" y="2775" width="102" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Top.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-yQ-uoT">
@@ -74,11 +91,13 @@
                     <connections>
                         <outlet property="ScrollView" destination="NFH-pg-o2Y" id="969-AF-eIO"/>
                         <outlet property="ScrollView2" destination="u8c-wP-YQ0" id="x5r-r6-zOb"/>
+                        <outlet property="image1" destination="9TS-fu-mRK" id="dEw-EJ-Hht"/>
+                        <outlet property="image2" destination="Tib-6K-IUn" id="VdI-cc-zdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcO-dt-qPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="-395"/>
+            <point key="canvasLocation" x="-735" y="-395.07042253521126"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -128,7 +147,7 @@
         <!--Content View Controller-->
         <scene sceneID="7Qo-gZ-EEx">
             <objects>
-                <viewController storyboardIdentifier="ContentViewController" id="AtP-kw-z79" customClass="ContentViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContentViewController" modalTransitionStyle="crossDissolve" id="AtP-kw-z79" customClass="ContentViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0fa-HK-pkD"/>
                         <viewControllerLayoutGuide type="bottom" id="Tb2-h4-IPW"/>
@@ -145,7 +164,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQf-ky-615">
-                                <frame key="frameInset" minX="10" minY="51" width="300" height="300"/>
+                                <frame key="frameInset" minX="10" minY="80" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -163,7 +182,7 @@
         <!--Page View Controller-->
         <scene sceneID="7Ib-vN-0F7">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rY6-lV-GUy" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="crossDissolve" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="rY6-lV-GUy" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iUS-CL-Na4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1305" y="-300"/>
@@ -175,8 +194,13 @@
         <image name="Bt-Share.png" width="78" height="78"/>
         <image name="Main.jpg" width="750" height="7340"/>
         <image name="News-wood.png" width="750" height="678"/>
+        <image name="Tmp-album-1.jpg" width="212" height="300"/>
+        <image name="Tmp-album-2.jpg" width="212" height="300"/>
         <image name="Tmp-poster-1.jpg" width="1060" height="1060"/>
         <image name="Tmp-poster-2.jpg" width="1060" height="1060"/>
         <image name="Top.png" width="750" height="153"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lY6-z6-oJB"/>
+    </inferredMetricsTieBreakers>
 </document>

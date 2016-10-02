@@ -29,7 +29,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         
         self.pageViewController.dataSource = self
         
-        var startVC = self.viewControllerAtIndex(index: 0) as ContentViewController
+        
+        var startVC = self.viewControllerAtIndex(index: k) as ContentViewController
         var viewControllers = NSArray(object: startVC)
         
         self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .forward, animated: true, completion: nil)

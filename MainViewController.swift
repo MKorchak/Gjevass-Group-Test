@@ -7,10 +7,19 @@
 //
 
 import UIKit
+var k = 0
 
 class MainViewController: UIViewController {
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var ScrollView2: UIScrollView!
+    @IBAction func Button1(_ sender: UIButton) {
+        k = 0
+    }
+    @IBAction func Button2(_ sender: UIButton) {
+        k = 1
+    }
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -18,7 +27,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         ScrollView.contentSize.height = 3132
         ScrollView2.contentSize.width = 645
     }
