@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="3132"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News-wood.png" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-pc-yff">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News-wood1.png" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-pc-yff">
                                         <rect key="frame" x="0.0" y="317" width="320" height="285"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -67,9 +67,21 @@
                                         <rect key="frame" x="161" y="2775" width="102" height="139"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Light.png" translatesAutoresizingMaskIntoConstraints="NO" id="OXP-iK-CVb">
+                                        <rect key="frame" x="152" y="2529" width="70" height="69"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Stick2.png" translatesAutoresizingMaskIntoConstraints="NO" id="oPh-wB-O71">
+                                        <rect key="frame" x="75" y="2321" width="80" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="igla.png" translatesAutoresizingMaskIntoConstraints="NO" id="S4n-Sp-WYo">
+                                        <rect key="frame" x="104" y="2391" width="15" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Top.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-yQ-uoT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Top1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-yQ-uoT">
                                 <frame key="frameInset" width="320" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -93,11 +105,13 @@
                         <outlet property="ScrollView2" destination="u8c-wP-YQ0" id="x5r-r6-zOb"/>
                         <outlet property="image1" destination="9TS-fu-mRK" id="dEw-EJ-Hht"/>
                         <outlet property="image2" destination="Tib-6K-IUn" id="VdI-cc-zdy"/>
+                        <outlet property="light" destination="OXP-iK-CVb" id="BCE-Ym-DyS"/>
+                        <outlet property="stick2" destination="oPh-wB-O71" id="riN-Mc-W5l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcO-dt-qPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="-395.07042253521126"/>
+            <point key="canvasLocation" x="-712.5" y="-354.92957746478874"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -153,7 +167,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Tb2-h4-IPW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rEG-Rd-zFj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9EZ-g4-Ij7">
@@ -192,13 +206,16 @@
         <image name="Bt-Back.png" width="78" height="78"/>
         <image name="Bt-More.png" width="78" height="78"/>
         <image name="Bt-Share.png" width="78" height="78"/>
+        <image name="Light.png" width="100" height="100"/>
         <image name="Main.jpg" width="750" height="7340"/>
-        <image name="News-wood.png" width="750" height="678"/>
+        <image name="News-wood1.png" width="750" height="678"/>
+        <image name="Stick2.png" width="174" height="348"/>
         <image name="Tmp-album-1.jpg" width="212" height="300"/>
         <image name="Tmp-album-2.jpg" width="212" height="300"/>
         <image name="Tmp-poster-1.jpg" width="1060" height="1060"/>
         <image name="Tmp-poster-2.jpg" width="1060" height="1060"/>
-        <image name="Top.png" width="750" height="153"/>
+        <image name="Top1.png" width="750" height="153"/>
+        <image name="igla.png" width="25" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lY6-z6-oJB"/>
