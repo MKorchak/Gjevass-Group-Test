@@ -59,14 +59,6 @@
                                             </button>
                                         </subviews>
                                     </scrollView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tmp-album-1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9TS-fu-mRK">
-                                        <rect key="frame" x="25" y="2775" width="102" height="139"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tmp-album-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tib-6K-IUn">
-                                        <rect key="frame" x="161" y="2775" width="102" height="139"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Light.png" translatesAutoresizingMaskIntoConstraints="NO" id="OXP-iK-CVb">
                                         <rect key="frame" x="152" y="2529" width="70" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -103,8 +95,6 @@
                     <connections>
                         <outlet property="ScrollView" destination="NFH-pg-o2Y" id="969-AF-eIO"/>
                         <outlet property="ScrollView2" destination="u8c-wP-YQ0" id="x5r-r6-zOb"/>
-                        <outlet property="image1" destination="9TS-fu-mRK" id="dEw-EJ-Hht"/>
-                        <outlet property="image2" destination="Tib-6K-IUn" id="VdI-cc-zdy"/>
                         <outlet property="light" destination="OXP-iK-CVb" id="BCE-Ym-DyS"/>
                         <outlet property="stick2" destination="oPh-wB-O71" id="riN-Mc-W5l"/>
                     </connections>
@@ -210,8 +200,6 @@
         <image name="Main.jpg" width="750" height="7340"/>
         <image name="News-wood1.png" width="750" height="678"/>
         <image name="Stick2.png" width="174" height="348"/>
-        <image name="Tmp-album-1.jpg" width="212" height="300"/>
-        <image name="Tmp-album-2.jpg" width="212" height="300"/>
         <image name="Tmp-poster-1.jpg" width="1060" height="1060"/>
         <image name="Tmp-poster-2.jpg" width="1060" height="1060"/>
         <image name="Top1.png" width="750" height="153"/>
