@@ -17,5 +17,6 @@ extension Store {
     }
 
     @NSManaged public var sImage: NSData?
+    @NSManaged public var sPoster: NSData?
 
 }

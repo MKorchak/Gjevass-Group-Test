@@ -60,6 +60,7 @@ class MainViewController: UIViewController {
         storeTranscription(sImage: poster1Data)
         storeTranscription(sImage: poster2Data)
         getTranscriptions()
+        
         ScrollView.contentSize.height = 3132
         ScrollView2.contentSize.width = 645
         ScrollView.contentOffset.y = y
@@ -125,7 +126,7 @@ class MainViewController: UIViewController {
         //create a fetch request, telling it about the entity
         let fetchRequest: NSFetchRequest<Store> = Store.fetchRequest()
         var x = 25
-        var y = 2775
+        let y = 2775
         var rotation = 0.02
         
         do {
@@ -138,12 +139,12 @@ class MainViewController: UIViewController {
             //You need to convert to NSManagedObject to use 'for' loops
             for trans in searchResults as [NSManagedObject] {
                 //get the Key Value pairs (although there may be a better way to do that...
-                var frame = CGRect(
+                let frame = CGRect(
                     x: x,
                     y: y,
                     width: 102,
                     height: 139)
-                var imageView = UIImageView(frame: frame)
+                let imageView = UIImageView(frame: frame)
                 imageView.image = UIImage(data: (trans.value(forKey: "sImage")) as! Data)
                 imageView.transform = CGAffineTransform(rotationAngle: CGFloat(rotation))
                 ScrollView.addSubview(imageView)

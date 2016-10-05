@@ -30,10 +30,10 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         self.pageViewController.dataSource = self
         
         
-        var startVC = self.viewControllerAtIndex(index: k) as ContentViewController
-        var viewControllers = NSArray(object: startVC)
+        let startVC = self.viewControllerAtIndex(index: k) as ContentViewController
+        let viewControllers = NSArray(object: startVC)
         
-        self.pageViewController.setViewControllers(viewControllers as! [UIViewController], direction: .forward, animated: true, completion: nil)
+        self.pageViewController.setViewControllers(viewControllers as? [UIViewController], direction: .forward, animated: true, completion: nil)
         
         self.pageViewController.view.frame = CGRect(x: 0, y: 70, width: self.view.frame.width, height: self.view.frame.size.height - 60)
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
          return ContentViewController()
          }
         
-        var  vc: ContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
+        let  vc: ContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "ContentViewController") as! ContentViewController
         vc.imageFile = self.pageImages[index] as! String
         vc.titleText = self.pageTitles[index] as! String
         vc.pageIndex = index
@@ -67,7 +67,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     //MARK: Page View Controller Data Source
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        var vc = viewController as! ContentViewController
+        let vc = viewController as! ContentViewController
         var index = vc.pageIndex as Int
         
         if (index == 0 || index == NSNotFound) {
@@ -80,7 +80,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController : UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        var vc = viewController as! ContentViewController
+        let vc = viewController as! ContentViewController
         var index = vc.pageIndex as Int
         
         if (index == NSNotFound) {
